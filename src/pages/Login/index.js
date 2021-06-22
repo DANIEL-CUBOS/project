@@ -61,7 +61,7 @@ function Login() {
             autoComplete="off"
             onSubmit={handleSubmit(onSubmit)}
           >
-            <Typography variant="h4">Login</Typography>
+            <Typography variant="h4">Acessar a Conta</Typography>
             <TextField className={classes.email} label="E-mail" {...register('email', { required: true })} />
             <InputSenha className={classes.senha} label="Senha" register={() => register('senha', { required: true })} />
             {erro && <Alert severity="error">{erro}</Alert>}

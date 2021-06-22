@@ -27,8 +27,7 @@ function Login() {
   const [carregando, setCarregando] = useState(false);
   const { atualizar } = useLoja();
   const { logar } = useAuth();
-  const test = "";
-
+  
   async function onSubmit(data) {
     setCarregando(true);
     setErro('');
